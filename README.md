@@ -1,4 +1,4 @@
-# AWTK 针对腾讯 OS(STM32f103ze) 的移植。
+# AWTK 针对RT-Thread(STM32f103ze) 的移植。
 
 * [AWTK](https://github.com/zlgopen/awtk) 全称 Toolkit AnyWhere，是 [ZLG](http://www.zlg.cn/) 开发的开源 GUI 引擎，旨在为嵌入式系统、WEB、各种小程序、手机和 PC 打造的通用 GUI 引擎，为用户提供一个功能强大、高效可靠、简单易用、可轻松做出炫酷效果的 GUI 引擎。
 
