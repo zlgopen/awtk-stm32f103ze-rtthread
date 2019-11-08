@@ -11,7 +11,7 @@
 #include "usart.h"
 #include "lcd_driver.h"
 #include "tkc/thread.h"
-#include "platforms/cmsis_os/rtos.h"
+#include "platforms/common/rtos.h"
 
 extern void systick_init(void);
 extern ret_t platform_prepare(void);
