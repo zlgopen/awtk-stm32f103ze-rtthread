@@ -22,5 +22,6 @@ git clone https://github.com/zlgopen/awtk.git
 
 ## 文档
 
-[AWTK 在 RT-Thread 上的移植笔记]( docs/rtt-port.md)
-[AWTK 在 STM32F103 裸系统上的移植笔记] (https://github.com/zlgopen/awtk/blob/master/docs/porting_to_stm32f103ze.md)
+* [AWTK 在 RT-Thread 上的移植笔记](docs/rtt-port.md)
+
+* [AWTK 在 STM32F103 裸系统上的移植笔记](https://github.com/zlgopen/awtk/blob/master/docs/porting_to_stm32f103ze.md)
