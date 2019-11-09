@@ -1430,11 +1430,6 @@
               <FilePath>..\awtk\src\platforms\rtt\semaphore.c</FilePath>
             </File>
             <File>
-              <FileName>sys_tick.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\awtk\src\platforms\rtt\sys_tick.c</FilePath>
-            </File>
-            <File>
               <FileName>thread.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\awtk\src\platforms\rtt\thread.c</FilePath>
@@ -1443,6 +1438,11 @@
               <FileName>rtos.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\awtk\src\platforms\rtt\rtos.c</FilePath>
+            </File>
+            <File>
+              <FileName>sys_tick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\awtk\src\platforms\common\sys_tick.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -2718,8 +2718,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\awtk\src\platforms\rtt\sys_tick.c</PathWithFileName>
-      <FilenameWithoutPath>sys_tick.c</FilenameWithoutPath>
+      <PathWithFileName>..\awtk\src\platforms\rtt\thread.c</PathWithFileName>
+      <FilenameWithoutPath>thread.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -2730,8 +2730,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\awtk\src\platforms\rtt\thread.c</PathWithFileName>
-      <FilenameWithoutPath>thread.c</FilenameWithoutPath>
+      <PathWithFileName>..\awtk\src\platforms\rtt\rtos.c</PathWithFileName>
+      <FilenameWithoutPath>rtos.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -2742,8 +2742,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\awtk\src\platforms\rtt\rtos.c</PathWithFileName>
-      <FilenameWithoutPath>rtos.c</FilenameWithoutPath>
+      <PathWithFileName>..\awtk\src\platforms\common\sys_tick.c</PathWithFileName>
+      <FilenameWithoutPath>sys_tick.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
