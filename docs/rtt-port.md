@@ -37,7 +37,6 @@ rtthread/include/rtthread.h
 rtthread/rtconfig.h
 rtthread/src
 rtthread/src/clock.c
-rtthread/src/components.c
 rtthread/src/cpu.c
 rtthread/src/device.c
 rtthread/src/idle.c
@@ -76,16 +75,60 @@ rtthread/include
 ```
 src/platforms/rtt/mutex.c
 src/platforms/rtt/semaphore.c
-src/platforms/rtt/sys_tick.c
 src/platforms/rtt/thread.c
+src/platforms/common/sys_tick.c
 ```
 
-主要就是 SysTick 中断的实现， 参考stm32/libraries/HAL\_Drivers/drv\_common.c修改的。
+## 3. 实现rtos.c。
 
-> 非 arm 平台 SysTick 函数的名称可能不一样，根据自己的需要调整。
+> 参考stm32/libraries/HAL\_Drivers/drv\_common.c和components.c修改的。
+
 
 ```
-static volatile uint64_t g_sys_tick;
+#include "rthw.h"
+#include "rtthread.h"
+
+static bool_t s_kernel_inited = FALSE;
+
+static bool_t rtos_is_inited(void) {
+  return s_kernel_inited;
+}
+
+static uint32_t s_heap[2 * 1024];
+
+ret_t rtos_init(void) {
+  rt_hw_interrupt_disable();
+
+  /* show version */
+  rt_show_version();
+
+#ifdef RT_USING_HEAP
+  rt_system_heap_init((void*)s_heap, s_heap + sizeof(s_heap) / sizeof(s_heap[0]));
+#endif
+
+  /* initialize scheduler system */
+  rt_system_scheduler_init();
+
+  /* initialize timer */
+  rt_system_timer_init();
+
+  /* initialize timer thread */
+  rt_system_timer_thread_init();
+
+  /* initialize idle thread */
+  rt_thread_idle_init();
+
+  s_kernel_inited = TRUE;
+
+  return RET_OK;
+}
+
+ret_t rtos_start(void) {
+  /* start scheduler */
+  rt_system_scheduler_start();
+
+  return RET_OK;
+}
 
 void rtos_tick(void) {
   if (rtos_is_inited()) {
@@ -95,14 +138,13 @@ void rtos_tick(void) {
   }
 }
 
-void SysTick_Handler(void) {
-  g_sys_tick++;
-  rtos_tick();
+void rtos_delay(uint32_t ms) {
+  rt_thread_delay(ms);
 }
 
 ```
 
-## 3. 在线程中启动 AWTK
+## 4. 在线程中启动 AWTK
 
 ```
 
@@ -121,20 +163,6 @@ static ret_t awtk_start_ui_thread(void) {
   tk_thread_set_stack_size(ui_thread, 2048);
 
   return tk_thread_start(ui_thread);
-}
-
-static void hardware_prepare(void) {
-  NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
-  systick_init();
-  led_init();
-  button_init();
-  TFT_Init();
-  TFT_ClearScreen(BLACK);
-  FLASH_Init();
-  TOUCH_Init();
-
-  TIM3_Init(50, 7199);
-  rtc_init();
 }
 
 int main() {
