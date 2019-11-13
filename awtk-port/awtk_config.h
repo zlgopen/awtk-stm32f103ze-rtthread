@@ -1,4 +1,4 @@
-﻿
+
 /**
  * File:   awtk_config.h
  * Author: AWTK Develop Team
@@ -113,6 +113,7 @@
  *
  * #define WITH_WCSXXX 1
  */
+#define WITH_WCSXXX 1
 
 /**
  * 如果启用STM32 G2D硬件加速，请定义本宏

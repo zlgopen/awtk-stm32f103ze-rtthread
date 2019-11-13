@@ -94,7 +94,7 @@ static bool_t rtos_is_inited(void) {
   return s_kernel_inited;
 }
 
-static uint32_t s_heap[2 * 1024];
+static uint32_t s_heap[4 * 1024];
 
 ret_t rtos_init(void) {
   rt_hw_interrupt_disable();
@@ -144,12 +144,17 @@ void rtos_delay(uint32_t ms) {
 
 ```
 
+> 由于线程的栈是由RTT分配的，所以RTT的heap要稍微大一点。
+
 ## 4. 在线程中启动 AWTK
 
 ```
+extern ret_t platform_prepare(void);
+extern void sys_tick_enable(bool_t enable);
+extern int gui_app_start(int lcd_w, int lcd_h);
 
 void* awtk_thread(void* args) {
-  gui_app_start(320, 480);
+  gui_app_start(tftlcd_data.width, tftlcd_data.height);
 
   return NULL;
 }
@@ -160,19 +165,34 @@ static ret_t awtk_start_ui_thread(void) {
 
   tk_thread_set_priority(ui_thread, 3);
   tk_thread_set_name(ui_thread, "awtk");
-  tk_thread_set_stack_size(ui_thread, 2048);
+  tk_thread_set_stack_size(ui_thread, 8000);
 
   return tk_thread_start(ui_thread);
+}
+
+void hardware_prepare(void) {
+	SysTick_Init();
+	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);  
+	LED_Init();
+	USART1_Init(9600);
+	TFTLCD_Init();			
+	KEY_Init();
+	TOUCH_Init();
+	TIM3_Init(50,7199);
+	RTC_Init();
+	LCD_Clear(RED);
 }
 
 int main() {
   hardware_prepare();
   platform_prepare();
-
+	sys_tick_enable(TRUE);
+	
   rtos_init();
   awtk_start_ui_thread();
-
   rtos_start();
+	
+	return 0;
 }
 ```
 
@@ -184,14 +204,15 @@ int main() {
 为此 platform\_prepare 函数做了防重复调用的处理。
 
 ```
-static bool_t s_inited = FALSE;
-static uint32_t s_heam_mem[4096];
-
 ret_t platform_prepare(void) {
-	if(!s_inited) {
-		s_inited = TRUE;
+  static bool_t inited = FALSE;
+  static uint32_t s_heam_mem[7000];
+
+  if (!inited) {
+    inited = TRUE;
     tk_mem_init(s_heam_mem, sizeof(s_heam_mem));
-	}
+  }
+
   return RET_OK;
 }
 ```
