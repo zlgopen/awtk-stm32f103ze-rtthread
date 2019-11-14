@@ -15,10 +15,7 @@ void systick_enable_int(void) {
 void SysTick_Init(void) {
   SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);
   fac_us = SystemCoreClock / 8000000;
-
   fac_ms = (u16)fac_us * 1000;
-
-  systick_enable_int();
 }
 
 //延时nus
@@ -30,8 +27,6 @@ void delay_us(u32 nus) {
   do {
     temp = SysTick->CTRL;
   } while ((temp & 0x01) && !(temp & (1 << 16))); //等待时间到达
-
-  systick_enable_int();
 }
 
 //延时nms
@@ -47,6 +42,4 @@ void delay_ms(u16 nms) {
   do {
     temp = SysTick->CTRL;
   } while ((temp & 0x01) && !(temp & (1 << 16))); //等待时间到达
-
-  systick_enable_int();
 }

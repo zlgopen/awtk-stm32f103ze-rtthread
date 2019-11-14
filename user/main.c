@@ -13,7 +13,7 @@
 #include "platforms/common/rtos.h"
 
 extern ret_t platform_prepare(void);
-extern void sys_tick_enable(bool_t enable);
+extern void systick_enable_int(void);
 extern int gui_app_start(int lcd_w, int lcd_h);
 
 void* awtk_thread(void* args) {
@@ -43,13 +43,12 @@ void hardware_prepare(void) {
 	TOUCH_Init();
 	TIM3_Init(50,7199);
 	RTC_Init();
-	LCD_Clear(RED);
 }
 
 int main() {
   hardware_prepare();
   platform_prepare();
-	sys_tick_enable(TRUE);
+	systick_enable_int();
 	
   rtos_init();
   awtk_start_ui_thread();

@@ -21,7 +21,7 @@
 
 #include "tftlcd.h"
 
-#include "lcd/lcd_reg.h"
+#include "lcd/lcd_mem_fragment.h"
 #include "tkc/mem.h"
 
 typedef uint16_t pixel_t;
@@ -37,4 +37,4 @@ typedef uint16_t pixel_t;
 
 #include "base/pixel.h"
 #include "blend/pixel_ops.inc"
-#include "lcd/lcd_reg.inc"
+#include "lcd/lcd_mem_fragment.inc"

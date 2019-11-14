@@ -27,19 +27,21 @@
 #include "touch.h"
 #include "usart.h"
 
+
+#include "base/idle.h"
+#include "base/timer.h"
+#include "tkc/platform.h"
+#include "base/main_loop.h"
 #include "base/event_queue.h"
 #include "base/font_manager.h"
-#include "base/idle.h"
-#include "base/main_loop.h"
-#include "base/timer.h"
-#include "lcd/lcd_reg.h"
+#include "lcd/lcd_mem_fragment.h"
 #include "main_loop/main_loop_simple.h"
-#include "tkc/platform.h"
+
 
 ret_t platform_disaptch_input(main_loop_t *l) { return RET_OK; }
 
 static lcd_t *platform_create_lcd(wh_t w, wh_t h) {
-  return lcd_reg_create(w, h);
+  return lcd_mem_fragment_create(w, h);
 }
 
 void dispatch_input_events(void) {
@@ -55,11 +57,11 @@ void dispatch_input_events(void) {
     break;
   }
   case KEY_LEFT: {
-    key = TK_KEY_LEFT;
+    key = TK_KEY_RETURN;
     break;
   }
   case KEY_RIGHT: {
-    key = TK_KEY_RIGHT;
+    key = TK_KEY_BACK;
     break;
   }
   default: { key = 0; }
