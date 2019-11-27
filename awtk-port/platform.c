@@ -19,12 +19,13 @@
  *
  */
 
-#include "base/timer.h"
+
 #include "tkc/mem.h"
+#include "base/timer.h"
 
 ret_t platform_prepare(void) {
   static bool_t inited = FALSE;
-  static uint32_t s_heam_mem[7000];
+  static uint32_t s_heam_mem[6000];
 
   if (!inited) {
     inited = TRUE;
