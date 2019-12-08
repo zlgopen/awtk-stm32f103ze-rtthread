@@ -25,7 +25,7 @@
 
 ret_t platform_prepare(void) {
   static bool_t inited = FALSE;
-  static uint32_t s_heam_mem[6000];
+  static uint32_t s_heam_mem[5000];
 
   if (!inited) {
     inited = TRUE;
