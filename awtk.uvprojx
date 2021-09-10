@@ -311,7 +311,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>1</Optim>
+            <Optim>2</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -1684,6 +1684,86 @@
               <FileName>blend_image_rgba8888_rgb565.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\awtk\src\blend\blend_image_rgba8888_rgb565.c</FilePath>
+            </File>
+            <File>
+              <FileName>data_reader.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\awtk\src\tkc\data_reader.c</FilePath>
+            </File>
+            <File>
+              <FileName>data_reader.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\awtk\src\tkc\data_reader.h</FilePath>
+            </File>
+            <File>
+              <FileName>data_reader_factory.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\awtk\src\tkc\data_reader_factory.c</FilePath>
+            </File>
+            <File>
+              <FileName>data_reader_factory.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\awtk\src\tkc\data_reader_factory.h</FilePath>
+            </File>
+            <File>
+              <FileName>data_reader_file.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\awtk\src\tkc\data_reader_file.c</FilePath>
+            </File>
+            <File>
+              <FileName>data_reader_file.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\awtk\src\tkc\data_reader_file.h</FilePath>
+            </File>
+            <File>
+              <FileName>data_reader_mem.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\awtk\src\tkc\data_reader_mem.c</FilePath>
+            </File>
+            <File>
+              <FileName>data_reader_mem.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\awtk\src\tkc\data_reader_mem.h</FilePath>
+            </File>
+            <File>
+              <FileName>data_writer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\awtk\src\tkc\data_writer.c</FilePath>
+            </File>
+            <File>
+              <FileName>data_writer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\awtk\src\tkc\data_writer.h</FilePath>
+            </File>
+            <File>
+              <FileName>data_writer_factory.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\awtk\src\tkc\data_writer_factory.c</FilePath>
+            </File>
+            <File>
+              <FileName>data_writer_factory.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\awtk\src\tkc\data_writer_factory.h</FilePath>
+            </File>
+            <File>
+              <FileName>data_writer_file.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\awtk\src\tkc\data_writer_file.c</FilePath>
+            </File>
+            <File>
+              <FileName>data_writer_file.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\awtk\src\tkc\data_writer_file.h</FilePath>
+            </File>
+            <File>
+              <FileName>data_writer_wbuffer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\awtk\src\tkc\data_writer_wbuffer.c</FilePath>
+            </File>
+            <File>
+              <FileName>data_writer_wbuffer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\awtk\src\tkc\data_writer_wbuffer.h</FilePath>
             </File>
           </Files>
         </Group>
