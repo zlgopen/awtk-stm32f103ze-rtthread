@@ -10,7 +10,7 @@
     <aExt>*.s*; *.src; *.a*</aExt>
     <oExt>*.obj; *.o</oExt>
     <lExt>*.lib</lExt>
-    <tExt>*.txt; *.h; *.inc</tExt>
+    <tExt>*.txt; *.h; *.inc; *.md</tExt>
     <pExt>*.plm</pExt>
     <CppX>*.cpp</CppX>
     <nMigrate>0</nMigrate>
@@ -78,33 +78,6 @@
         <IsCurrentTarget>1</IsCurrentTarget>
       </OPTFL>
       <CpuCode>18</CpuCode>
-      <Books>
-        <Book>
-          <Number>0</Number>
-          <Title>Quick Start Guide (MCBSTM32E)</Title>
-          <Path>C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Boards/Keil/MCBSTM32E/Documentation/STM32E_QSG.pdf</Path>
-        </Book>
-        <Book>
-          <Number>1</Number>
-          <Title>Base Board Schematics (MCBSTM32E)</Title>
-          <Path>C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Boards/Keil/MCBSTM32E/Documentation/mcbstm32e-base-board-schematics.pdf</Path>
-        </Book>
-        <Book>
-          <Number>2</Number>
-          <Title>Display Board Schematics (MCBSTM32E)</Title>
-          <Path>C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Boards/Keil/MCBSTM32E/Documentation/mcbstm32e-display-board-schematics.pdf</Path>
-        </Book>
-        <Book>
-          <Number>3</Number>
-          <Title>User Manual (MCBSTM32E)</Title>
-          <Path>C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.4.1\Boards/Keil/MCBSTM32E/Documentation/mcbstm32e.chm</Path>
-        </Book>
-        <Book>
-          <Number>4</Number>
-          <Title>MCBSTM32E Evaluation Board Web Page (MCBSTM32E)</Title>
-          <Path>http://www.keil.com/mcbstm32e/</Path>
-        </Book>
-      </Books>
       <DebugOpt>
         <uSim>0</uSim>
         <uTrg>1</uTrg>
@@ -127,7 +100,10 @@
         <tRSysVw>1</tRSysVw>
         <sRunDeb>0</sRunDeb>
         <sLrtime>0</sLrtime>
-        <nTsel>6</nTsel>
+        <bEvRecOn>1</bEvRecOn>
+        <bSchkAxf>0</bSchkAxf>
+        <bTchkAxf>0</bTchkAxf>
+        <nTsel>4</nTsel>
         <sDll></sDll>
         <sDllPa></sDllPa>
         <sDlgDll></sDlgDll>
@@ -190,7 +166,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>.\awtk\src\platforms\rtt\rtos.c</Filename>
+          <Filename>C:\Users\admin.DESKTOP-T5A2OCK\work\awtk-root\awtk-stm32f103ze-rtthread\awtk\src\platforms\rtt\rtos.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\Template\awtk/src/platforms/rtt/rtos.c\79</Expression>
         </Bp>
@@ -222,7 +198,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>.\User\main.c</Filename>
+          <Filename>C:\Users\admin.DESKTOP-T5A2OCK\work\awtk-root\awtk-stm32f103ze-rtthread\User\main.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\Template\User/main.c\33</Expression>
         </Bp>
@@ -238,7 +214,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>.\awtk\src\platforms\rtt\rtos.c</Filename>
+          <Filename>C:\Users\admin.DESKTOP-T5A2OCK\work\awtk-root\awtk-stm32f103ze-rtthread\awtk\src\platforms\rtt\rtos.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -274,8 +250,20 @@
       </DebugFlag>
       <LintExecutable></LintExecutable>
       <LintConfigFile></LintConfigFile>
+      <bLintAuto>0</bLintAuto>
+      <bAutoGenD>0</bAutoGenD>
+      <LntExFlags>0</LntExFlags>
+      <pMisraName></pMisraName>
+      <pszMrule></pszMrule>
+      <pSingCmds></pSingCmds>
+      <pMultCmds></pMultCmds>
+      <pMisraNamep></pMisraNamep>
+      <pszMrulep></pszMrulep>
+      <pSingCmdsp></pSingCmdsp>
+      <pMultCmdsp></pMultCmdsp>
       <DebugDescription>
         <Enable>1</Enable>
+        <EnableFlashSeq>0</EnableFlashSeq>
         <EnableLog>0</EnableLog>
         <Protocol>2</Protocol>
         <DbgClock>10000000</DbgClock>
@@ -294,11 +282,10 @@
       <FileNumber>1</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\User\main.c</PathWithFileName>
-      <FilenameWithoutPath>main.c</FilenameWithoutPath>
+      <PathWithFileName>.\User\real_main.c</PathWithFileName>
+      <FilenameWithoutPath>real_main.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -307,7 +294,6 @@
       <FileNumber>2</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\User\stm32f10x_it.c</PathWithFileName>
@@ -328,7 +314,6 @@
       <FileNumber>3</FileNumber>
       <FileType>2</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\CMSIS\startup_stm32f10x_hd.s</PathWithFileName>
@@ -349,7 +334,6 @@
       <FileNumber>4</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c</PathWithFileName>
@@ -362,7 +346,6 @@
       <FileNumber>5</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c</PathWithFileName>
@@ -375,7 +358,6 @@
       <FileNumber>6</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c</PathWithFileName>
@@ -388,7 +370,6 @@
       <FileNumber>7</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c</PathWithFileName>
@@ -401,7 +382,6 @@
       <FileNumber>8</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c</PathWithFileName>
@@ -414,7 +394,6 @@
       <FileNumber>9</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c</PathWithFileName>
@@ -427,7 +406,6 @@
       <FileNumber>10</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_iwdg.c</PathWithFileName>
@@ -440,7 +418,6 @@
       <FileNumber>11</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c</PathWithFileName>
@@ -453,7 +430,6 @@
       <FileNumber>12</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_bkp.c</PathWithFileName>
@@ -466,7 +442,6 @@
       <FileNumber>13</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c</PathWithFileName>
@@ -479,7 +454,6 @@
       <FileNumber>14</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c</PathWithFileName>
@@ -492,7 +466,6 @@
       <FileNumber>15</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dac.c</PathWithFileName>
@@ -505,7 +478,6 @@
       <FileNumber>16</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c</PathWithFileName>
@@ -518,7 +490,6 @@
       <FileNumber>17</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c</PathWithFileName>
@@ -531,7 +502,6 @@
       <FileNumber>18</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_can.c</PathWithFileName>
@@ -544,7 +514,6 @@
       <FileNumber>19</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_fsmc.c</PathWithFileName>
@@ -557,7 +526,6 @@
       <FileNumber>20</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c</PathWithFileName>
@@ -569,7 +537,7 @@
 
   <Group>
     <GroupName>CMSIS</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -578,7 +546,6 @@
       <FileNumber>21</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\CMSIS\system_stm32f10x.c</PathWithFileName>
@@ -591,7 +558,6 @@
       <FileNumber>22</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Libraries\CMSIS\core_cm3.c</PathWithFileName>
@@ -603,7 +569,7 @@
 
   <Group>
     <GroupName>APP</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -612,7 +578,6 @@
       <FileNumber>23</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\APP\led\led.c</PathWithFileName>
@@ -625,7 +590,6 @@
       <FileNumber>24</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\APP\tftlcd\tftlcd.c</PathWithFileName>
@@ -638,7 +602,6 @@
       <FileNumber>25</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\APP\time\time.c</PathWithFileName>
@@ -651,7 +614,6 @@
       <FileNumber>26</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\APP\key\key.c</PathWithFileName>
@@ -664,7 +626,6 @@
       <FileNumber>27</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\APP\24Cxx\24cxx.c</PathWithFileName>
@@ -677,7 +638,6 @@
       <FileNumber>28</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\APP\iic\iic.c</PathWithFileName>
@@ -690,7 +650,6 @@
       <FileNumber>29</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\APP\touch\touch.c</PathWithFileName>
@@ -703,7 +662,6 @@
       <FileNumber>30</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\APP\rtc\rtc.c</PathWithFileName>
@@ -716,7 +674,6 @@
       <FileNumber>31</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\APP\spi\spi.c</PathWithFileName>
@@ -728,7 +685,7 @@
 
   <Group>
     <GroupName>Public</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -737,7 +694,6 @@
       <FileNumber>32</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Public\system.c</PathWithFileName>
@@ -750,7 +706,6 @@
       <FileNumber>33</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Public\usart.c</PathWithFileName>
@@ -771,10 +726,9 @@
       <FileNumber>34</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\buffer.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\buffer.c</PathWithFileName>
       <FilenameWithoutPath>buffer.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -784,10 +738,9 @@
       <FileNumber>35</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\color.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\color.c</PathWithFileName>
       <FilenameWithoutPath>color.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -797,10 +750,9 @@
       <FileNumber>36</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\color_parser.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\color_parser.c</PathWithFileName>
       <FilenameWithoutPath>color_parser.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -810,10 +762,9 @@
       <FileNumber>37</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\compressor.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\compressor.c</PathWithFileName>
       <FilenameWithoutPath>compressor.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -823,10 +774,9 @@
       <FileNumber>38</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\crc.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\crc.c</PathWithFileName>
       <FilenameWithoutPath>crc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -836,10 +786,9 @@
       <FileNumber>39</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\darray.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\darray.c</PathWithFileName>
       <FilenameWithoutPath>darray.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -849,10 +798,9 @@
       <FileNumber>40</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\date_time.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\date_time.c</PathWithFileName>
       <FilenameWithoutPath>date_time.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -862,10 +810,9 @@
       <FileNumber>41</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\easing.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\easing.c</PathWithFileName>
       <FilenameWithoutPath>easing.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -875,10 +822,9 @@
       <FileNumber>42</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\emitter.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\emitter.c</PathWithFileName>
       <FilenameWithoutPath>emitter.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -888,10 +834,9 @@
       <FileNumber>43</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\event.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\event.c</PathWithFileName>
       <FilenameWithoutPath>event.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -901,10 +846,9 @@
       <FileNumber>44</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\event_source.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\event_source.c</PathWithFileName>
       <FilenameWithoutPath>event_source.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -914,10 +858,9 @@
       <FileNumber>45</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\event_source_fd.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\event_source_fd.c</PathWithFileName>
       <FilenameWithoutPath>event_source_fd.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -927,10 +870,9 @@
       <FileNumber>46</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\event_source_idle.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\event_source_idle.c</PathWithFileName>
       <FilenameWithoutPath>event_source_idle.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -940,10 +882,9 @@
       <FileNumber>47</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\event_source_manager.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\event_source_manager.c</PathWithFileName>
       <FilenameWithoutPath>event_source_manager.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -953,10 +894,9 @@
       <FileNumber>48</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\event_source_manager_default.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\event_source_manager_default.c</PathWithFileName>
       <FilenameWithoutPath>event_source_manager_default.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -966,10 +906,9 @@
       <FileNumber>49</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\event_source_timer.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\event_source_timer.c</PathWithFileName>
       <FilenameWithoutPath>event_source_timer.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -979,10 +918,9 @@
       <FileNumber>50</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\fscript.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\fscript.c</PathWithFileName>
       <FilenameWithoutPath>fscript.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -992,10 +930,9 @@
       <FileNumber>51</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\fs.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\fs.c</PathWithFileName>
       <FilenameWithoutPath>fs.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1005,10 +942,9 @@
       <FileNumber>52</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\func_call_parser.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\func_call_parser.c</PathWithFileName>
       <FilenameWithoutPath>func_call_parser.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1018,10 +954,9 @@
       <FileNumber>53</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\idle_info.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\idle_info.c</PathWithFileName>
       <FilenameWithoutPath>idle_info.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1031,10 +966,9 @@
       <FileNumber>54</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\idle_manager.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\idle_manager.c</PathWithFileName>
       <FilenameWithoutPath>idle_manager.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1044,10 +978,9 @@
       <FileNumber>55</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\int_str.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\int_str.c</PathWithFileName>
       <FilenameWithoutPath>int_str.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1057,10 +990,9 @@
       <FileNumber>56</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\iostream.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\iostream.c</PathWithFileName>
       <FilenameWithoutPath>iostream.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1070,10 +1002,9 @@
       <FileNumber>57</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\istream.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\istream.c</PathWithFileName>
       <FilenameWithoutPath>istream.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1083,10 +1014,9 @@
       <FileNumber>58</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\matrix.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\matrix.c</PathWithFileName>
       <FilenameWithoutPath>matrix.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1096,10 +1026,9 @@
       <FileNumber>59</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\mem.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\mem.c</PathWithFileName>
       <FilenameWithoutPath>mem.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1109,10 +1038,9 @@
       <FileNumber>60</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\named_value.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\named_value.c</PathWithFileName>
       <FilenameWithoutPath>named_value.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1122,10 +1050,9 @@
       <FileNumber>61</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\object.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\object.c</PathWithFileName>
       <FilenameWithoutPath>object.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1135,10 +1062,9 @@
       <FileNumber>62</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\object_array.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\object_array.c</PathWithFileName>
       <FilenameWithoutPath>object_array.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1148,10 +1074,9 @@
       <FileNumber>63</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\object_default.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\object_default.c</PathWithFileName>
       <FilenameWithoutPath>object_default.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1161,10 +1086,9 @@
       <FileNumber>64</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\ostream.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\ostream.c</PathWithFileName>
       <FilenameWithoutPath>ostream.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1174,10 +1098,9 @@
       <FileNumber>65</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\path.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\path.c</PathWithFileName>
       <FilenameWithoutPath>path.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1187,10 +1110,9 @@
       <FileNumber>66</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\rect.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\rect.c</PathWithFileName>
       <FilenameWithoutPath>rect.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1200,10 +1122,9 @@
       <FileNumber>67</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\ring_buffer.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\ring_buffer.c</PathWithFileName>
       <FilenameWithoutPath>ring_buffer.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1213,10 +1134,9 @@
       <FileNumber>68</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\rom_fs.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\rom_fs.c</PathWithFileName>
       <FilenameWithoutPath>rom_fs.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1226,10 +1146,9 @@
       <FileNumber>69</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\slist.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\slist.c</PathWithFileName>
       <FilenameWithoutPath>slist.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1239,10 +1158,9 @@
       <FileNumber>70</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\socket_pair.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\socket_pair.c</PathWithFileName>
       <FilenameWithoutPath>socket_pair.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1252,10 +1170,9 @@
       <FileNumber>71</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\str.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\str.c</PathWithFileName>
       <FilenameWithoutPath>str.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1265,10 +1182,9 @@
       <FileNumber>72</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\str_str.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\str_str.c</PathWithFileName>
       <FilenameWithoutPath>str_str.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1278,10 +1194,9 @@
       <FileNumber>73</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\time_now.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\time_now.c</PathWithFileName>
       <FilenameWithoutPath>time_now.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1291,10 +1206,9 @@
       <FileNumber>74</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\timer_info.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\timer_info.c</PathWithFileName>
       <FilenameWithoutPath>timer_info.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1304,10 +1218,9 @@
       <FileNumber>75</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\timer_manager.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\timer_manager.c</PathWithFileName>
       <FilenameWithoutPath>timer_manager.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1317,10 +1230,9 @@
       <FileNumber>76</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\tokenizer.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\tokenizer.c</PathWithFileName>
       <FilenameWithoutPath>tokenizer.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1330,10 +1242,9 @@
       <FileNumber>77</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\utf8.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\utf8.c</PathWithFileName>
       <FilenameWithoutPath>utf8.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1343,10 +1254,9 @@
       <FileNumber>78</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\utils.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\utils.c</PathWithFileName>
       <FilenameWithoutPath>utils.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1356,10 +1266,9 @@
       <FileNumber>79</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\value.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\value.c</PathWithFileName>
       <FilenameWithoutPath>value.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1369,10 +1278,9 @@
       <FileNumber>80</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\value_desc.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\value_desc.c</PathWithFileName>
       <FilenameWithoutPath>value_desc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1382,10 +1290,9 @@
       <FileNumber>81</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\wstr.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\wstr.c</PathWithFileName>
       <FilenameWithoutPath>wstr.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1395,10 +1302,9 @@
       <FileNumber>82</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\assets_manager.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\assets_manager.c</PathWithFileName>
       <FilenameWithoutPath>assets_manager.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1408,10 +1314,9 @@
       <FileNumber>83</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\bitmap.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\bitmap.c</PathWithFileName>
       <FilenameWithoutPath>bitmap.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1421,10 +1326,9 @@
       <FileNumber>84</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\canvas.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\canvas.c</PathWithFileName>
       <FilenameWithoutPath>canvas.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1434,10 +1338,9 @@
       <FileNumber>85</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\children_layouter.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\children_layouter.c</PathWithFileName>
       <FilenameWithoutPath>children_layouter.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1447,10 +1350,9 @@
       <FileNumber>86</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\children_layouter_factory.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\children_layouter_factory.c</PathWithFileName>
       <FilenameWithoutPath>children_layouter_factory.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1460,10 +1362,9 @@
       <FileNumber>87</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\clip_board.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\clip_board.c</PathWithFileName>
       <FilenameWithoutPath>clip_board.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1473,10 +1374,9 @@
       <FileNumber>88</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\dialog.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\dialog.c</PathWithFileName>
       <FilenameWithoutPath>dialog.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1486,10 +1386,9 @@
       <FileNumber>89</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\dialog_highlighter.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\dialog_highlighter.c</PathWithFileName>
       <FilenameWithoutPath>dialog_highlighter.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1499,10 +1398,9 @@
       <FileNumber>90</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\dialog_highlighter_factory.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\dialog_highlighter_factory.c</PathWithFileName>
       <FilenameWithoutPath>dialog_highlighter_factory.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1512,10 +1410,9 @@
       <FileNumber>91</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\enums.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\enums.c</PathWithFileName>
       <FilenameWithoutPath>enums.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1525,10 +1422,9 @@
       <FileNumber>92</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\event_queue.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\event_queue.c</PathWithFileName>
       <FilenameWithoutPath>event_queue.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1538,10 +1434,9 @@
       <FileNumber>93</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\events.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\events.c</PathWithFileName>
       <FilenameWithoutPath>events.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1551,10 +1446,9 @@
       <FileNumber>94</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\font.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\font.c</PathWithFileName>
       <FilenameWithoutPath>font.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1564,10 +1458,9 @@
       <FileNumber>95</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\font_loader.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\font_loader.c</PathWithFileName>
       <FilenameWithoutPath>font_loader.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1577,10 +1470,9 @@
       <FileNumber>96</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\font_manager.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\font_manager.c</PathWithFileName>
       <FilenameWithoutPath>font_manager.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1590,10 +1482,9 @@
       <FileNumber>97</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\glyph_cache.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\glyph_cache.c</PathWithFileName>
       <FilenameWithoutPath>glyph_cache.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1603,10 +1494,9 @@
       <FileNumber>98</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\graphic_buffer.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\graphic_buffer.c</PathWithFileName>
       <FilenameWithoutPath>graphic_buffer.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1616,10 +1506,9 @@
       <FileNumber>99</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\hscrollable.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\hscrollable.c</PathWithFileName>
       <FilenameWithoutPath>hscrollable.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1629,10 +1518,9 @@
       <FileNumber>100</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\idle.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\idle.c</PathWithFileName>
       <FilenameWithoutPath>idle.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1642,10 +1530,9 @@
       <FileNumber>101</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\image_base.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\image_base.c</PathWithFileName>
       <FilenameWithoutPath>image_base.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1655,10 +1542,9 @@
       <FileNumber>102</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\image_loader.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\image_loader.c</PathWithFileName>
       <FilenameWithoutPath>image_loader.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1668,10 +1554,9 @@
       <FileNumber>103</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\image_manager.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\image_manager.c</PathWithFileName>
       <FilenameWithoutPath>image_manager.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1681,10 +1566,9 @@
       <FileNumber>104</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\input_device_status.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\input_device_status.c</PathWithFileName>
       <FilenameWithoutPath>input_device_status.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1694,10 +1578,9 @@
       <FileNumber>105</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\input_engine.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\input_engine.c</PathWithFileName>
       <FilenameWithoutPath>input_engine.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1707,10 +1590,9 @@
       <FileNumber>106</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\input_method.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\input_method.c</PathWithFileName>
       <FilenameWithoutPath>input_method.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1720,10 +1602,9 @@
       <FileNumber>107</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\layout.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\layout.c</PathWithFileName>
       <FilenameWithoutPath>layout.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1733,10 +1614,9 @@
       <FileNumber>108</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\lcd.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\lcd.c</PathWithFileName>
       <FilenameWithoutPath>lcd.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1746,10 +1626,9 @@
       <FileNumber>109</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\lcd_profile.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\lcd_profile.c</PathWithFileName>
       <FilenameWithoutPath>lcd_profile.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1759,10 +1638,9 @@
       <FileNumber>110</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\line_break.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\line_break.c</PathWithFileName>
       <FilenameWithoutPath>line_break.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1772,10 +1650,9 @@
       <FileNumber>111</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\locale_info.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\locale_info.c</PathWithFileName>
       <FilenameWithoutPath>locale_info.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1785,10 +1662,9 @@
       <FileNumber>112</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\main_loop.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\main_loop.c</PathWithFileName>
       <FilenameWithoutPath>main_loop.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1798,10 +1674,9 @@
       <FileNumber>113</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\native_window.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\native_window.c</PathWithFileName>
       <FilenameWithoutPath>native_window.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1811,10 +1686,9 @@
       <FileNumber>114</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\self_layouter.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\self_layouter.c</PathWithFileName>
       <FilenameWithoutPath>self_layouter.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1824,10 +1698,9 @@
       <FileNumber>115</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\self_layouter_factory.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\self_layouter_factory.c</PathWithFileName>
       <FilenameWithoutPath>self_layouter_factory.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1837,10 +1710,9 @@
       <FileNumber>116</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\shortcut.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\shortcut.c</PathWithFileName>
       <FilenameWithoutPath>shortcut.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1850,10 +1722,9 @@
       <FileNumber>117</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\style.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\style.c</PathWithFileName>
       <FilenameWithoutPath>style.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1863,10 +1734,9 @@
       <FileNumber>118</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\style_const.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\style_const.c</PathWithFileName>
       <FilenameWithoutPath>style_const.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1876,10 +1746,9 @@
       <FileNumber>119</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\style_factory.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\style_factory.c</PathWithFileName>
       <FilenameWithoutPath>style_factory.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1889,10 +1758,9 @@
       <FileNumber>120</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\style_mutable.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\style_mutable.c</PathWithFileName>
       <FilenameWithoutPath>style_mutable.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1902,10 +1770,9 @@
       <FileNumber>121</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\suggest_words.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\suggest_words.c</PathWithFileName>
       <FilenameWithoutPath>suggest_words.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1915,10 +1782,9 @@
       <FileNumber>122</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\system_info.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\system_info.c</PathWithFileName>
       <FilenameWithoutPath>system_info.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1928,10 +1794,9 @@
       <FileNumber>123</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\text_edit.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\text_edit.c</PathWithFileName>
       <FilenameWithoutPath>text_edit.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1941,10 +1806,9 @@
       <FileNumber>124</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\theme.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\theme.c</PathWithFileName>
       <FilenameWithoutPath>theme.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1954,10 +1818,9 @@
       <FileNumber>125</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\timer.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\timer.c</PathWithFileName>
       <FilenameWithoutPath>timer.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1967,10 +1830,9 @@
       <FileNumber>126</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\ui_builder.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\ui_builder.c</PathWithFileName>
       <FilenameWithoutPath>ui_builder.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1980,10 +1842,9 @@
       <FileNumber>127</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\ui_feedback.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\ui_feedback.c</PathWithFileName>
       <FilenameWithoutPath>ui_feedback.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -1993,10 +1854,9 @@
       <FileNumber>128</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\ui_loader.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\ui_loader.c</PathWithFileName>
       <FilenameWithoutPath>ui_loader.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2006,10 +1866,9 @@
       <FileNumber>129</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\velocity.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\velocity.c</PathWithFileName>
       <FilenameWithoutPath>velocity.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2019,10 +1878,9 @@
       <FileNumber>130</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\vgcanvas.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\vgcanvas.c</PathWithFileName>
       <FilenameWithoutPath>vgcanvas.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2032,10 +1890,9 @@
       <FileNumber>131</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\widget.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\widget.c</PathWithFileName>
       <FilenameWithoutPath>widget.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2045,10 +1902,9 @@
       <FileNumber>132</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\widget_animator.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\widget_animator.c</PathWithFileName>
       <FilenameWithoutPath>widget_animator.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2058,10 +1914,9 @@
       <FileNumber>133</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\widget_animator_factory_null.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\widget_animator_factory_null.c</PathWithFileName>
       <FilenameWithoutPath>widget_animator_factory_null.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2071,10 +1926,9 @@
       <FileNumber>134</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\widget_animator_manager.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\widget_animator_manager.c</PathWithFileName>
       <FilenameWithoutPath>widget_animator_manager.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2084,10 +1938,9 @@
       <FileNumber>135</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\widget_factory.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\widget_factory.c</PathWithFileName>
       <FilenameWithoutPath>widget_factory.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2097,10 +1950,9 @@
       <FileNumber>136</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\widget_vtable.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\widget_vtable.c</PathWithFileName>
       <FilenameWithoutPath>widget_vtable.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2110,10 +1962,9 @@
       <FileNumber>137</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\window.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\window.c</PathWithFileName>
       <FilenameWithoutPath>window.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2123,10 +1974,9 @@
       <FileNumber>138</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\window_animator.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\window_animator.c</PathWithFileName>
       <FilenameWithoutPath>window_animator.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2136,10 +1986,9 @@
       <FileNumber>139</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\window_animator_factory.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\window_animator_factory.c</PathWithFileName>
       <FilenameWithoutPath>window_animator_factory.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2149,10 +1998,9 @@
       <FileNumber>140</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\window_base.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\window_base.c</PathWithFileName>
       <FilenameWithoutPath>window_base.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2162,10 +2010,9 @@
       <FileNumber>141</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\window_manager.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\window_manager.c</PathWithFileName>
       <FilenameWithoutPath>window_manager.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2175,10 +2022,9 @@
       <FileNumber>142</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\clip_board\clip_board_default.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\clip_board\clip_board_default.c</PathWithFileName>
       <FilenameWithoutPath>clip_board_default.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2188,10 +2034,9 @@
       <FileNumber>143</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\font_loader\font_loader_bitmap.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\font_loader\font_loader_bitmap.c</PathWithFileName>
       <FilenameWithoutPath>font_loader_bitmap.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2201,10 +2046,9 @@
       <FileNumber>144</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\graphic_buffer\graphic_buffer_default.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\graphic_buffer\graphic_buffer_default.c</PathWithFileName>
       <FilenameWithoutPath>graphic_buffer_default.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2214,10 +2058,9 @@
       <FileNumber>145</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\input_engines\input_engine_null.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\input_engines\input_engine_null.c</PathWithFileName>
       <FilenameWithoutPath>input_engine_null.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2227,10 +2070,9 @@
       <FileNumber>146</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\input_methods\input_method_creator.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\input_methods\input_method_creator.c</PathWithFileName>
       <FilenameWithoutPath>input_method_creator.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2240,10 +2082,9 @@
       <FileNumber>147</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\layouters\children_layouter_builtins.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\layouters\children_layouter_builtins.c</PathWithFileName>
       <FilenameWithoutPath>children_layouter_builtins.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2253,10 +2094,9 @@
       <FileNumber>148</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\layouters\children_layouter_parser.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\layouters\children_layouter_parser.c</PathWithFileName>
       <FilenameWithoutPath>children_layouter_parser.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2266,10 +2106,9 @@
       <FileNumber>149</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\layouters\self_layouter_builtins.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\layouters\self_layouter_builtins.c</PathWithFileName>
       <FilenameWithoutPath>self_layouter_builtins.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2279,10 +2118,9 @@
       <FileNumber>150</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\layouters\self_layouter_default.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\layouters\self_layouter_default.c</PathWithFileName>
       <FilenameWithoutPath>self_layouter_default.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2292,10 +2130,9 @@
       <FileNumber>151</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\layouters\self_layouter_menu.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\layouters\self_layouter_menu.c</PathWithFileName>
       <FilenameWithoutPath>self_layouter_menu.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2305,10 +2142,9 @@
       <FileNumber>152</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\layouters\self_layouter_parser.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\layouters\self_layouter_parser.c</PathWithFileName>
       <FilenameWithoutPath>self_layouter_parser.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2318,10 +2154,9 @@
       <FileNumber>153</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\layouters\children_layouter_default.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\layouters\children_layouter_default.c</PathWithFileName>
       <FilenameWithoutPath>children_layouter_default.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2331,10 +2166,9 @@
       <FileNumber>154</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\main_loop\main_loop_simple.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\main_loop\main_loop_simple.c</PathWithFileName>
       <FilenameWithoutPath>main_loop_simple.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2344,10 +2178,9 @@
       <FileNumber>155</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\native_window\native_window_raw.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\native_window\native_window_raw.c</PathWithFileName>
       <FilenameWithoutPath>native_window_raw.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2357,10 +2190,9 @@
       <FileNumber>156</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\ui_loader\ui_binary_writer.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\ui_loader\ui_binary_writer.c</PathWithFileName>
       <FilenameWithoutPath>ui_binary_writer.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2370,10 +2202,9 @@
       <FileNumber>157</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\ui_loader\ui_builder_default.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\ui_loader\ui_builder_default.c</PathWithFileName>
       <FilenameWithoutPath>ui_builder_default.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2383,10 +2214,9 @@
       <FileNumber>158</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\ui_loader\ui_loader_default.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\ui_loader\ui_loader_default.c</PathWithFileName>
       <FilenameWithoutPath>ui_loader_default.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2396,10 +2226,9 @@
       <FileNumber>159</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\ui_loader\ui_loader_xml.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\ui_loader\ui_loader_xml.c</PathWithFileName>
       <FilenameWithoutPath>ui_loader_xml.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2409,10 +2238,9 @@
       <FileNumber>160</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\ui_loader\ui_serializer.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\ui_loader\ui_serializer.c</PathWithFileName>
       <FilenameWithoutPath>ui_serializer.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2422,10 +2250,9 @@
       <FileNumber>161</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\ui_loader\ui_xml_writer.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\ui_loader\ui_xml_writer.c</PathWithFileName>
       <FilenameWithoutPath>ui_xml_writer.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2435,10 +2262,9 @@
       <FileNumber>162</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\ui_loader\window_open.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\ui_loader\window_open.c</PathWithFileName>
       <FilenameWithoutPath>window_open.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2448,10 +2274,9 @@
       <FileNumber>163</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\vgcanvas\vgcanvas_null.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\vgcanvas\vgcanvas_null.c</PathWithFileName>
       <FilenameWithoutPath>vgcanvas_null.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2461,10 +2286,9 @@
       <FileNumber>164</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\app_bar.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\app_bar.c</PathWithFileName>
       <FilenameWithoutPath>app_bar.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2474,10 +2298,9 @@
       <FileNumber>165</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\button.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\button.c</PathWithFileName>
       <FilenameWithoutPath>button.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2487,10 +2310,9 @@
       <FileNumber>166</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\button_group.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\button_group.c</PathWithFileName>
       <FilenameWithoutPath>button_group.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2500,10 +2322,9 @@
       <FileNumber>167</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\calibration_win.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\calibration_win.c</PathWithFileName>
       <FilenameWithoutPath>calibration_win.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2513,10 +2334,9 @@
       <FileNumber>168</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\check_button.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\check_button.c</PathWithFileName>
       <FilenameWithoutPath>check_button.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2526,10 +2346,9 @@
       <FileNumber>169</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\color_tile.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\color_tile.c</PathWithFileName>
       <FilenameWithoutPath>color_tile.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2539,10 +2358,9 @@
       <FileNumber>170</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\column.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\column.c</PathWithFileName>
       <FilenameWithoutPath>column.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2552,10 +2370,9 @@
       <FileNumber>171</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\combo_box.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\combo_box.c</PathWithFileName>
       <FilenameWithoutPath>combo_box.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2565,10 +2382,9 @@
       <FileNumber>172</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\combo_box_item.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\combo_box_item.c</PathWithFileName>
       <FilenameWithoutPath>combo_box_item.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2578,10 +2394,9 @@
       <FileNumber>173</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\dialog_client.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\dialog_client.c</PathWithFileName>
       <FilenameWithoutPath>dialog_client.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2591,10 +2406,9 @@
       <FileNumber>174</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\dialog_helper.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\dialog_helper.c</PathWithFileName>
       <FilenameWithoutPath>dialog_helper.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2604,10 +2418,9 @@
       <FileNumber>175</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\dialog_title.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\dialog_title.c</PathWithFileName>
       <FilenameWithoutPath>dialog_title.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2617,10 +2430,9 @@
       <FileNumber>176</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\dragger.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\dragger.c</PathWithFileName>
       <FilenameWithoutPath>dragger.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2630,10 +2442,9 @@
       <FileNumber>177</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\edit.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\edit.c</PathWithFileName>
       <FilenameWithoutPath>edit.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2643,10 +2454,9 @@
       <FileNumber>178</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\grid.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\grid.c</PathWithFileName>
       <FilenameWithoutPath>grid.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2656,10 +2466,9 @@
       <FileNumber>179</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\grid_item.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\grid_item.c</PathWithFileName>
       <FilenameWithoutPath>grid_item.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2669,10 +2478,9 @@
       <FileNumber>180</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\group_box.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\group_box.c</PathWithFileName>
       <FilenameWithoutPath>group_box.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2682,10 +2490,9 @@
       <FileNumber>181</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\image.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\image.c</PathWithFileName>
       <FilenameWithoutPath>image.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2695,10 +2502,9 @@
       <FileNumber>182</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\label.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\label.c</PathWithFileName>
       <FilenameWithoutPath>label.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2708,10 +2514,9 @@
       <FileNumber>183</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\overlay.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\overlay.c</PathWithFileName>
       <FilenameWithoutPath>overlay.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2721,10 +2526,9 @@
       <FileNumber>184</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\pages.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\pages.c</PathWithFileName>
       <FilenameWithoutPath>pages.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2734,10 +2538,9 @@
       <FileNumber>185</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\popup.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\popup.c</PathWithFileName>
       <FilenameWithoutPath>popup.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2747,10 +2550,9 @@
       <FileNumber>186</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\progress_bar.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\progress_bar.c</PathWithFileName>
       <FilenameWithoutPath>progress_bar.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2760,10 +2562,9 @@
       <FileNumber>187</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\row.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\row.c</PathWithFileName>
       <FilenameWithoutPath>row.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2773,10 +2574,9 @@
       <FileNumber>188</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\slider.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\slider.c</PathWithFileName>
       <FilenameWithoutPath>slider.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2786,10 +2586,9 @@
       <FileNumber>189</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\spin_box.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\spin_box.c</PathWithFileName>
       <FilenameWithoutPath>spin_box.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2799,10 +2598,9 @@
       <FileNumber>190</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\system_bar.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\system_bar.c</PathWithFileName>
       <FilenameWithoutPath>system_bar.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2812,10 +2610,9 @@
       <FileNumber>191</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\tab_button.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\tab_button.c</PathWithFileName>
       <FilenameWithoutPath>tab_button.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2825,10 +2622,9 @@
       <FileNumber>192</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\tab_button_group.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\tab_button_group.c</PathWithFileName>
       <FilenameWithoutPath>tab_button_group.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2838,10 +2634,9 @@
       <FileNumber>193</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\tab_control.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\tab_control.c</PathWithFileName>
       <FilenameWithoutPath>tab_control.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2851,10 +2646,9 @@
       <FileNumber>194</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\view.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\view.c</PathWithFileName>
       <FilenameWithoutPath>view.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2864,10 +2658,9 @@
       <FileNumber>195</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\widgets.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\widgets.c</PathWithFileName>
       <FilenameWithoutPath>widgets.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2877,10 +2670,9 @@
       <FileNumber>196</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\window_manager\window_manager_default.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\window_manager\window_manager_default.c</PathWithFileName>
       <FilenameWithoutPath>window_manager_default.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2890,10 +2682,9 @@
       <FileNumber>197</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\xml\xml_builder.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\xml\xml_builder.c</PathWithFileName>
       <FilenameWithoutPath>xml_builder.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2903,10 +2694,9 @@
       <FileNumber>198</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\xml\xml_parser.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\xml\xml_parser.c</PathWithFileName>
       <FilenameWithoutPath>xml_parser.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2916,10 +2706,9 @@
       <FileNumber>199</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\awtk_global.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\awtk_global.c</PathWithFileName>
       <FilenameWithoutPath>awtk_global.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2929,10 +2718,9 @@
       <FileNumber>200</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\3rd\libunibreak\emojidef.c</PathWithFileName>
+      <PathWithFileName>..\awtk\3rd\libunibreak\emojidef.c</PathWithFileName>
       <FilenameWithoutPath>emojidef.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2942,10 +2730,9 @@
       <FileNumber>201</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\3rd\libunibreak\graphemebreak.c</PathWithFileName>
+      <PathWithFileName>..\awtk\3rd\libunibreak\graphemebreak.c</PathWithFileName>
       <FilenameWithoutPath>graphemebreak.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2955,10 +2742,9 @@
       <FileNumber>202</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\3rd\libunibreak\linebreak.c</PathWithFileName>
+      <PathWithFileName>..\awtk\3rd\libunibreak\linebreak.c</PathWithFileName>
       <FilenameWithoutPath>linebreak.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2968,10 +2754,9 @@
       <FileNumber>203</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\3rd\libunibreak\linebreakdata.c</PathWithFileName>
+      <PathWithFileName>..\awtk\3rd\libunibreak\linebreakdata.c</PathWithFileName>
       <FilenameWithoutPath>linebreakdata.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2981,10 +2766,9 @@
       <FileNumber>204</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\3rd\libunibreak\linebreakdef.c</PathWithFileName>
+      <PathWithFileName>..\awtk\3rd\libunibreak\linebreakdef.c</PathWithFileName>
       <FilenameWithoutPath>linebreakdef.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -2994,10 +2778,9 @@
       <FileNumber>205</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\3rd\libunibreak\unibreakbase.c</PathWithFileName>
+      <PathWithFileName>..\awtk\3rd\libunibreak\unibreakbase.c</PathWithFileName>
       <FilenameWithoutPath>unibreakbase.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3007,10 +2790,9 @@
       <FileNumber>206</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\3rd\libunibreak\unibreakdef.c</PathWithFileName>
+      <PathWithFileName>..\awtk\3rd\libunibreak\unibreakdef.c</PathWithFileName>
       <FilenameWithoutPath>unibreakdef.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3020,10 +2802,9 @@
       <FileNumber>207</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\3rd\libunibreak\wordbreak.c</PathWithFileName>
+      <PathWithFileName>..\awtk\3rd\libunibreak\wordbreak.c</PathWithFileName>
       <FilenameWithoutPath>wordbreak.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3033,10 +2814,9 @@
       <FileNumber>208</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\digit_clock.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\digit_clock.c</PathWithFileName>
       <FilenameWithoutPath>digit_clock.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3046,10 +2826,9 @@
       <FileNumber>209</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_bgr565_bgr565.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_bgr565_bgr565.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_bgr565_bgr565.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3059,10 +2838,9 @@
       <FileNumber>210</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_bgr565_bgra8888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_bgr565_bgra8888.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_bgr565_bgra8888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3072,10 +2850,9 @@
       <FileNumber>211</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_bgr565_rgba8888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_bgr565_rgba8888.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_bgr565_rgba8888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3085,10 +2862,9 @@
       <FileNumber>212</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_bgr888_bgr565.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_bgr888_bgr565.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_bgr888_bgr565.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3098,10 +2874,9 @@
       <FileNumber>213</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_bgr888_bgra8888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_bgr888_bgra8888.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_bgr888_bgra8888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3111,10 +2886,9 @@
       <FileNumber>214</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_bgr888_rgba8888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_bgr888_rgba8888.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_bgr888_rgba8888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3124,10 +2898,9 @@
       <FileNumber>215</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_bgra8888_bgr565.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_bgra8888_bgr565.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_bgra8888_bgr565.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3137,10 +2910,9 @@
       <FileNumber>216</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_bgra8888_bgra8888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_bgra8888_bgra8888.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_bgra8888_bgra8888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3150,10 +2922,9 @@
       <FileNumber>217</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_bgra8888_rgba8888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_bgra8888_rgba8888.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_bgra8888_rgba8888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3163,10 +2934,9 @@
       <FileNumber>218</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_rgb565_bgr565.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_rgb565_bgr565.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_rgb565_bgr565.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3176,10 +2946,9 @@
       <FileNumber>219</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_rgb565_bgra8888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_rgb565_bgra8888.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_rgb565_bgra8888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3189,10 +2958,9 @@
       <FileNumber>220</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_rgb565_rgba8888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_rgb565_rgba8888.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_rgb565_rgba8888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3202,10 +2970,9 @@
       <FileNumber>221</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_rgba8888_bgr565.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_rgba8888_bgr565.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_rgba8888_bgr565.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3215,10 +2982,9 @@
       <FileNumber>222</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_rgba8888_bgra8888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_rgba8888_bgra8888.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_rgba8888_bgra8888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3228,10 +2994,9 @@
       <FileNumber>223</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_rgba8888_rgba8888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_rgba8888_rgba8888.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_rgba8888_rgba8888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3241,10 +3006,9 @@
       <FileNumber>224</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\fill_image_abgr8888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\fill_image_abgr8888.c</PathWithFileName>
       <FilenameWithoutPath>fill_image_abgr8888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3254,10 +3018,9 @@
       <FileNumber>225</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\fill_image_argb8888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\fill_image_argb8888.c</PathWithFileName>
       <FilenameWithoutPath>fill_image_argb8888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3267,10 +3030,9 @@
       <FileNumber>226</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\fill_image_bgr565.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\fill_image_bgr565.c</PathWithFileName>
       <FilenameWithoutPath>fill_image_bgr565.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3280,10 +3042,9 @@
       <FileNumber>227</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\fill_image_bgr888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\fill_image_bgr888.c</PathWithFileName>
       <FilenameWithoutPath>fill_image_bgr888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3293,10 +3054,9 @@
       <FileNumber>228</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\fill_image_bgra8888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\fill_image_bgra8888.c</PathWithFileName>
       <FilenameWithoutPath>fill_image_bgra8888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3306,10 +3066,9 @@
       <FileNumber>229</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\fill_image_rgb565.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\fill_image_rgb565.c</PathWithFileName>
       <FilenameWithoutPath>fill_image_rgb565.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3319,10 +3078,9 @@
       <FileNumber>230</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\fill_image_rgba8888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\fill_image_rgba8888.c</PathWithFileName>
       <FilenameWithoutPath>fill_image_rgba8888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3332,10 +3090,9 @@
       <FileNumber>231</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\image_g2d.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\image_g2d.c</PathWithFileName>
       <FilenameWithoutPath>image_g2d.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3345,10 +3102,9 @@
       <FileNumber>232</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\rotate_image_bgr565.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\rotate_image_bgr565.c</PathWithFileName>
       <FilenameWithoutPath>rotate_image_bgr565.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3358,10 +3114,9 @@
       <FileNumber>233</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\rotate_image_bgr888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\rotate_image_bgr888.c</PathWithFileName>
       <FilenameWithoutPath>rotate_image_bgr888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3371,10 +3126,9 @@
       <FileNumber>234</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\rotate_image_bgra8888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\rotate_image_bgra8888.c</PathWithFileName>
       <FilenameWithoutPath>rotate_image_bgra8888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3384,10 +3138,9 @@
       <FileNumber>235</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\rotate_image_rgb565.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\rotate_image_rgb565.c</PathWithFileName>
       <FilenameWithoutPath>rotate_image_rgb565.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3397,10 +3150,9 @@
       <FileNumber>236</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\rotate_image_rgba8888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\rotate_image_rgba8888.c</PathWithFileName>
       <FilenameWithoutPath>rotate_image_rgba8888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3410,10 +3162,9 @@
       <FileNumber>237</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\soft_g2d.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\soft_g2d.c</PathWithFileName>
       <FilenameWithoutPath>soft_g2d.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3423,10 +3174,9 @@
       <FileNumber>238</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\log.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\log.c</PathWithFileName>
       <FilenameWithoutPath>log.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3436,10 +3186,9 @@
       <FileNumber>239</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_rgb888_bgr565.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_rgb888_bgr565.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_rgb888_bgr565.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3449,10 +3198,9 @@
       <FileNumber>240</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_rgb888_bgra8888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_rgb888_bgra8888.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_rgb888_bgra8888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3462,10 +3210,9 @@
       <FileNumber>241</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_rgb888_rgba8888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_rgb888_rgba8888.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_rgb888_rgba8888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3475,10 +3222,9 @@
       <FileNumber>242</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\fill_image_rgb888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\fill_image_rgb888.c</PathWithFileName>
       <FilenameWithoutPath>fill_image_rgb888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3488,10 +3234,9 @@
       <FileNumber>243</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\rotate_image_rgb888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\rotate_image_rgb888.c</PathWithFileName>
       <FilenameWithoutPath>rotate_image_rgb888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3501,10 +3246,9 @@
       <FileNumber>244</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\widgets\clip_view.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\widgets\clip_view.c</PathWithFileName>
       <FilenameWithoutPath>clip_view.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3514,10 +3258,9 @@
       <FileNumber>245</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\asset_info.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\asset_info.c</PathWithFileName>
       <FilenameWithoutPath>asset_info.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3527,10 +3270,9 @@
       <FileNumber>246</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\date_time_format.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\date_time_format.c</PathWithFileName>
       <FilenameWithoutPath>date_time_format.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3540,10 +3282,9 @@
       <FileNumber>247</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\base\asset_loader.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\base\asset_loader.c</PathWithFileName>
       <FilenameWithoutPath>asset_loader.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3553,10 +3294,9 @@
       <FileNumber>248</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_bgr565_rgb565.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_bgr565_rgb565.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_bgr565_rgb565.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3566,10 +3306,9 @@
       <FileNumber>249</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_bgr888_bgr888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_bgr888_bgr888.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_bgr888_bgr888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3579,10 +3318,9 @@
       <FileNumber>250</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_bgr888_rgb565.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_bgr888_rgb565.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_bgr888_rgb565.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3592,10 +3330,9 @@
       <FileNumber>251</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_bgra8888_rgb565.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_bgra8888_rgb565.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_bgra8888_rgb565.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3605,10 +3342,9 @@
       <FileNumber>252</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_rgb565_rgb565.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_rgb565_rgb565.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_rgb565_rgb565.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3618,10 +3354,9 @@
       <FileNumber>253</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_rgb888_rgb565.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_rgb888_rgb565.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_rgb888_rgb565.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3631,10 +3366,9 @@
       <FileNumber>254</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_rgb888_rgb888.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_rgb888_rgb888.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_rgb888_rgb888.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3644,10 +3378,9 @@
       <FileNumber>255</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\blend\blend_image_rgba8888_rgb565.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\blend\blend_image_rgba8888_rgb565.c</PathWithFileName>
       <FilenameWithoutPath>blend_image_rgba8888_rgb565.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3657,10 +3390,9 @@
       <FileNumber>256</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\data_reader.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\data_reader.c</PathWithFileName>
       <FilenameWithoutPath>data_reader.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3670,10 +3402,9 @@
       <FileNumber>257</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\data_reader.h</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\data_reader.h</PathWithFileName>
       <FilenameWithoutPath>data_reader.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3683,10 +3414,9 @@
       <FileNumber>258</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\data_reader_factory.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\data_reader_factory.c</PathWithFileName>
       <FilenameWithoutPath>data_reader_factory.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3696,10 +3426,9 @@
       <FileNumber>259</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\data_reader_factory.h</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\data_reader_factory.h</PathWithFileName>
       <FilenameWithoutPath>data_reader_factory.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3709,10 +3438,9 @@
       <FileNumber>260</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\data_reader_file.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\data_reader_file.c</PathWithFileName>
       <FilenameWithoutPath>data_reader_file.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3722,10 +3450,9 @@
       <FileNumber>261</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\data_reader_file.h</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\data_reader_file.h</PathWithFileName>
       <FilenameWithoutPath>data_reader_file.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3735,10 +3462,9 @@
       <FileNumber>262</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\data_reader_mem.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\data_reader_mem.c</PathWithFileName>
       <FilenameWithoutPath>data_reader_mem.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3748,10 +3474,9 @@
       <FileNumber>263</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\data_reader_mem.h</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\data_reader_mem.h</PathWithFileName>
       <FilenameWithoutPath>data_reader_mem.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3761,10 +3486,9 @@
       <FileNumber>264</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\data_writer.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\data_writer.c</PathWithFileName>
       <FilenameWithoutPath>data_writer.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3774,10 +3498,9 @@
       <FileNumber>265</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\data_writer.h</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\data_writer.h</PathWithFileName>
       <FilenameWithoutPath>data_writer.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3787,10 +3510,9 @@
       <FileNumber>266</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\data_writer_factory.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\data_writer_factory.c</PathWithFileName>
       <FilenameWithoutPath>data_writer_factory.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3800,10 +3522,9 @@
       <FileNumber>267</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\data_writer_factory.h</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\data_writer_factory.h</PathWithFileName>
       <FilenameWithoutPath>data_writer_factory.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3813,10 +3534,9 @@
       <FileNumber>268</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\data_writer_file.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\data_writer_file.c</PathWithFileName>
       <FilenameWithoutPath>data_writer_file.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3826,10 +3546,9 @@
       <FileNumber>269</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\data_writer_file.h</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\data_writer_file.h</PathWithFileName>
       <FilenameWithoutPath>data_writer_file.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3839,10 +3558,9 @@
       <FileNumber>270</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\data_writer_wbuffer.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\data_writer_wbuffer.c</PathWithFileName>
       <FilenameWithoutPath>data_writer_wbuffer.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3852,10 +3570,9 @@
       <FileNumber>271</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\data_writer_wbuffer.h</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\data_writer_wbuffer.h</PathWithFileName>
       <FilenameWithoutPath>data_writer_wbuffer.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3865,10 +3582,9 @@
       <FileNumber>272</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\object_locker.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\object_locker.c</PathWithFileName>
       <FilenameWithoutPath>object_locker.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -3878,11 +3594,22 @@
       <FileNumber>273</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\tkc\mutex_nest.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\tkc\mutex_nest.c</PathWithFileName>
       <FilenameWithoutPath>mutex_nest.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>7</GroupNumber>
+      <FileNumber>274</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\awtk\src\tkc\wchar32.c</PathWithFileName>
+      <FilenameWithoutPath>wchar32.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -3896,10 +3623,9 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>274</FileNumber>
+      <FileNumber>275</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\awtk-port\lcd_stm32_raw.c</PathWithFileName>
@@ -3909,10 +3635,9 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>275</FileNumber>
+      <FileNumber>276</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\awtk-port\main_loop_stm32_raw.c</PathWithFileName>
@@ -3922,10 +3647,9 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>276</FileNumber>
+      <FileNumber>277</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\awtk-port\platform.c</PathWithFileName>
@@ -3935,10 +3659,9 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>277</FileNumber>
+      <FileNumber>278</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\awtk-port\awtk_config.h</PathWithFileName>
@@ -3948,10 +3671,9 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>278</FileNumber>
+      <FileNumber>279</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\awtk-port\assert.c</PathWithFileName>
@@ -3961,10 +3683,9 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>279</FileNumber>
+      <FileNumber>280</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\awtk-port\SysTick.c</PathWithFileName>
@@ -3974,27 +3695,13 @@
     </File>
     <File>
       <GroupNumber>8</GroupNumber>
-      <FileNumber>280</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <Focus>0</Focus>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\platforms\raw\fs_os.c</PathWithFileName>
-      <FilenameWithoutPath>fs_os.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>8</GroupNumber>
       <FileNumber>281</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\platforms\rtt\mutex.c</PathWithFileName>
-      <FilenameWithoutPath>mutex.c</FilenameWithoutPath>
+      <PathWithFileName>..\awtk\src\platforms\raw\fs_os.c</PathWithFileName>
+      <FilenameWithoutPath>fs_os.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -4003,11 +3710,10 @@
       <FileNumber>282</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\platforms\rtt\rtos.c</PathWithFileName>
-      <FilenameWithoutPath>rtos.c</FilenameWithoutPath>
+      <PathWithFileName>..\awtk\src\platforms\rtt\mutex.c</PathWithFileName>
+      <FilenameWithoutPath>mutex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -4016,11 +3722,10 @@
       <FileNumber>283</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\platforms\rtt\semaphore.c</PathWithFileName>
-      <FilenameWithoutPath>semaphore.c</FilenameWithoutPath>
+      <PathWithFileName>..\awtk\src\platforms\rtt\rtos.c</PathWithFileName>
+      <FilenameWithoutPath>rtos.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -4029,11 +3734,10 @@
       <FileNumber>284</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\platforms\rtt\thread.c</PathWithFileName>
-      <FilenameWithoutPath>thread.c</FilenameWithoutPath>
+      <PathWithFileName>..\awtk\src\platforms\rtt\semaphore.c</PathWithFileName>
+      <FilenameWithoutPath>semaphore.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -4042,10 +3746,21 @@
       <FileNumber>285</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\src\platforms\common\sys_tick_handler.c</PathWithFileName>
+      <PathWithFileName>..\awtk\src\platforms\rtt\thread.c</PathWithFileName>
+      <FilenameWithoutPath>thread.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>8</GroupNumber>
+      <FileNumber>286</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\awtk\src\platforms\common\sys_tick_handler.c</PathWithFileName>
       <FilenameWithoutPath>sys_tick_handler.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -4060,27 +3775,85 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>9</GroupNumber>
-      <FileNumber>286</FileNumber>
+      <FileNumber>287</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\demos\assets-mini.c</PathWithFileName>
-      <FilenameWithoutPath>assets-mini.c</FilenameWithoutPath>
+      <PathWithFileName>..\awtk-demo-app\src\application.c</PathWithFileName>
+      <FilenameWithoutPath>application.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>9</GroupNumber>
-      <FileNumber>287</FileNumber>
+      <FileNumber>288</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\awtk\demos\demo_basic.c</PathWithFileName>
-      <FilenameWithoutPath>demo_basic.c</FilenameWithoutPath>
+      <PathWithFileName>..\awtk-demo-app\src\main.c</PathWithFileName>
+      <FilenameWithoutPath>main.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>9</GroupNumber>
+      <FileNumber>289</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\awtk-demo-app\src\common\navigator.c</PathWithFileName>
+      <FilenameWithoutPath>navigator.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>9</GroupNumber>
+      <FileNumber>290</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\awtk-demo-app\src\common\navigator.h</PathWithFileName>
+      <FilenameWithoutPath>navigator.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>9</GroupNumber>
+      <FileNumber>291</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\awtk-demo-app\src\pages\home_page.c</PathWithFileName>
+      <FilenameWithoutPath>home_page.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>9</GroupNumber>
+      <FileNumber>292</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\awtk-demo-app\src\pages\window1.c</PathWithFileName>
+      <FilenameWithoutPath>window1.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>9</GroupNumber>
+      <FileNumber>293</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\awtk-demo-app\src\pages\window2.c</PathWithFileName>
+      <FilenameWithoutPath>window2.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -4088,16 +3861,15 @@
 
   <Group>
     <GroupName>rtthread</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>288</FileNumber>
+      <FileNumber>294</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtthread\cortex-m3\cpuport.c</PathWithFileName>
@@ -4107,10 +3879,9 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>289</FileNumber>
+      <FileNumber>295</FileNumber>
       <FileType>2</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtthread\cortex-m3\context_rvds.S</PathWithFileName>
@@ -4120,10 +3891,9 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>290</FileNumber>
+      <FileNumber>296</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtthread\src\clock.c</PathWithFileName>
@@ -4133,10 +3903,9 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>291</FileNumber>
+      <FileNumber>297</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtthread\src\cpu.c</PathWithFileName>
@@ -4146,10 +3915,9 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>292</FileNumber>
+      <FileNumber>298</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtthread\src\device.c</PathWithFileName>
@@ -4159,10 +3927,9 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>293</FileNumber>
+      <FileNumber>299</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtthread\src\idle.c</PathWithFileName>
@@ -4172,10 +3939,9 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>294</FileNumber>
+      <FileNumber>300</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtthread\src\ipc.c</PathWithFileName>
@@ -4185,10 +3951,9 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>295</FileNumber>
+      <FileNumber>301</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtthread\src\irq.c</PathWithFileName>
@@ -4198,10 +3963,9 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>296</FileNumber>
+      <FileNumber>302</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtthread\src\kservice.c</PathWithFileName>
@@ -4211,10 +3975,9 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>297</FileNumber>
+      <FileNumber>303</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtthread\src\mem.c</PathWithFileName>
@@ -4224,10 +3987,9 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>298</FileNumber>
+      <FileNumber>304</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtthread\src\memheap.c</PathWithFileName>
@@ -4237,10 +3999,9 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>299</FileNumber>
+      <FileNumber>305</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtthread\src\mempool.c</PathWithFileName>
@@ -4250,10 +4011,9 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>300</FileNumber>
+      <FileNumber>306</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtthread\src\object.c</PathWithFileName>
@@ -4263,10 +4023,9 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>301</FileNumber>
+      <FileNumber>307</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtthread\src\scheduler.c</PathWithFileName>
@@ -4276,10 +4035,9 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>302</FileNumber>
+      <FileNumber>308</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtthread\src\signal.c</PathWithFileName>
@@ -4289,10 +4047,9 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>303</FileNumber>
+      <FileNumber>309</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtthread\src\slab.c</PathWithFileName>
@@ -4302,10 +4059,9 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>304</FileNumber>
+      <FileNumber>310</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtthread\src\thread.c</PathWithFileName>
@@ -4315,10 +4071,9 @@
     </File>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>305</FileNumber>
+      <FileNumber>311</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
-      <Focus>0</Focus>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rtthread\src\timer.c</PathWithFileName>

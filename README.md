@@ -12,10 +12,11 @@
 
 1. 获取源码
 
+> 将三个仓库取到同一个目录下：
 ```
-git clone https://github.com/zlgopen/awtk-stm32f103ze-rtthread.git
-cd awtk-stm32f103ze-rtthread
 git clone https://github.com/zlgopen/awtk.git
+git clone https://github.com/zlgopen/awtk-demo-app.git
+git clone https://github.com/zlgopen/awtk-stm32f103ze-rtthread.git
 ```
 
 2. 用 keil 打开 user/awtk.uvproj
